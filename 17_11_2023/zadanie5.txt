@@ -1,0 +1,13 @@
+Zadanie 5   
+    Wygodniej jest użyć instrukcje switch, bo switch jest przejrzysty, czytelny i szybszy.
+
+zad1
+C	
+zad2
+A
+zad3
+B
+zad4
+C
+zad5
+D
