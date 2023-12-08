@@ -1,0 +1,4 @@
+Stosowanie petli w programowaniu przynosi kilka korzysci.
+ Pozwala ona efektywnie powtarzac fragmenty kodu co ulatwia czytelnosc i redukuje ilosc powtarzalnego kodu.
+ Petle takze umozliwiaja dynamiczne przetwarzanie danych co to jest istotne w przypadku operacji na kolekcjach.
+ Pomagaja zwiekszyc wydajnosc kodu i ulatwic jego modyfikacje.
