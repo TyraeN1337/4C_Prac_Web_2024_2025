@@ -1,0 +1,2 @@
+http://localhost/02.02.2024/zad2.php?imie=Jakub&nazwisko=Nowak&wyslij=wyslij
+http://localhost/02.02.2024/zad3.php
