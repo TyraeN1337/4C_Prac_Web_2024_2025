@@ -1,0 +1,29 @@
+
+fieldset{
+    margin: 20px;
+    height: 300px;
+    margin-left: 770px;
+    margin-right: 770px;
+    border-radius: 15px;
+}
+legend{
+    margin: auto;
+    color: teal;
+}
+.wynik{
+    margin-left: 770px;
+    margin-right: 770px;
+}
+button{
+    margin-left: 770px;
+    margin-right: 770px;
+    width: 365px;
+    height: 40px;
+    background-color: teal;
+    border-radius: 10px;
+    color: white;
+    text-decoration: solid;
+}
+button:hover{
+    background-color: turquoise;
+}

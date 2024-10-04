@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <fieldset>
+        <legend><h2>KANTOR WALUT</h2></legend>
+        Kwota*: <input type="number" name="kwota" id="kwota">
+        <select name="waluty" id="waluty">
+            <option value="PLN">PLN</option>
+            <option value="USD">USD</option>
+            <option value="GBP">GBP</option>
+            <option value="EUR">EUR</option>
+            <option value="CHF">CHF</option>
+        </select></br>
+        *-pole wymagane</br>
+        Wybierz walutę docelową: <br>
+        <input type="radio" name="na" value="PLN" id="PLNradio">PLN</br>
+        <input type="radio" name="na" value="USD" id="USDradio">USD</br>
+        <input type="radio" name="na" value="GBP" id="GBPradio">GBP</br>
+        <input type="radio" name="na" value="EUR" id="EURradio">EUR</br>
+        <input type="radio" name="na" value="CHF" id="CHFradio">CHF</br>
+    </fieldset>
+        <button onclick="oblicz()">PRZELICZ</button></br>
+
+    <script>
+        function oblicz(){
+            var kwota = document.getElementById("kwota").value;
+            var waluta = document.getElementById("waluty").value;
+            let war = 0;
+            switch(waluta){
+            case "PLN":
+                if(document.getElementById("PLNradio").checked){
+                    wynik.innerText = war = kwota + " PLN"
+                }
+                if(document.getElementById("USDradio").checked){
+                    wynik.innerText = war = kwota / 3.8 + " USD"
+                }
+                if(document.getElementById("GBPradio").checked){
+                    wynik.innerText = war = kwota / 5.18 + " GBP"
+                }
+                if(document.getElementById("EURradio").checked){
+                    wynik.innerText = war = kwota / 4.31 + " EUR"
+                }
+                if(document.getElementById("CHFradio").checked){
+                   wynik.innerText = war = kwota / 4.58 + " CHF"
+                }
+                break;
+            case "USD":
+                if(document.getElementById("PLNradio").checked){
+                    wynik.innerText = war = kwota * 3.91+ " PLN"
+                }
+                if(document.getElementById("USDradio").checked){
+                    wynik.innerText = war = kwota + " USD"
+                }
+                if(document.getElementById("GBPradio").checked){
+                    wynik.innerText = war = kwota * 0.76 + " GBP"
+                }
+                if(document.getElementById("EURradio").checked){
+                    wynik.innerText = war = kwota * 0.91 + " EUR"
+                }
+                if(document.getElementById("CHFradio").checked){
+                   wynik.innerText = war = kwota * 0.86 + " CHF"
+                }
+                break;
+            case "GBP":
+                if(document.getElementById("PLNradio").checked){
+                    wynik.innerText = war = kwota * 5.13 + " PLN"
+                }
+                if(document.getElementById("USDradio").checked){
+                    wynik.innerText = war = kwota *1.3 + " USD"
+                }
+                if(document.getElementById("GBPradio").checked){
+                    wynik.innerText = war = kwota + " GBP"
+                }
+                if(document.getElementById("EURradio").checked){
+                    wynik.innerText = war = kwota * 1.19 + " EUR"
+                }
+                if(document.getElementById("CHFradio").checked){
+                   wynik.innerText = war = kwota * 1.12 + " CHF"
+                }
+                break;
+            case "EUR":
+                if(document.getElementById("PLNradio").checked){
+                    wynik.innerText = war = kwota * 4.31 + " PLN"
+                }
+                if(document.getElementById("USDradio").checked){
+                    wynik.innerText = war = kwota  * 1.10 + " USD"
+                }
+                if(document.getElementById("GBPradio").checked){
+                    wynik.innerText = war = kwota * 0.84 + " GBP"
+                }
+                if(document.getElementById("EURradio").checked){
+                    wynik.innerText = war = kwota + " EUR"
+                }
+                if(document.getElementById("CHFradio").checked){
+                   wynik.innerText = war = kwota * 0.94 + " CHF"
+                }
+                break;
+            case "CHF":
+                if(document.getElementById("PLNradio").checked){
+                    wynik.innerText = war = kwota * 4.58 + " PLN"
+                }
+                if(document.getElementById("USDradio").checked){
+                    wynik.innerText = war = kwota  * 1.17+ " USD"
+                }
+                if(document.getElementById("GBPradio").checked){
+                    wynik.innerText = war = kwota * 0.89 + " GBP"
+                }
+                if(document.getElementById("EURradio").checked){
+                    wynik.innerText = war = kwota * 1.06 + " EUR"
+                }
+                if(document.getElementById("CHFradio").checked){
+                   wynik.innerText = war = kwota + "CHF"
+                }
+                break;
+        
+            }
+        }
+        </script>
+    <section class="wynik">
+        Otrzymasz: <div id="wynik"></div>
+    </section>
+</body>
+</html>
